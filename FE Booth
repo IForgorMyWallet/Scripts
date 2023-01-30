@@ -1,0 +1,86 @@
+--i made this 100% by myself
+--you can use this to do rate my avatar in other games idk
+
+--YOU NEED THESE HATS:
+--https://www.roblox.com/catalog/9661543986/Nike-Shoebox-Costume
+--https://www.roblox.com/catalog/9402600266/Sketched-white-and-magenta-5G-wings (https://www.youtube.com/watch?v=vQ3On0m8nPI&ab_channel=LightSlayer)
+--https://www.roblox.com/catalog/63690008/Pal-Hair
+--https://www.roblox.com/catalog/451220849/Lavender-Updo
+--https://www.roblox.com/catalog/62724852/Chestnut-Bun
+--https://www.roblox.com/catalog/62234425/Brown-Hair
+--https://www.roblox.com/catalog/48474294/ROBLOX-Girl-Hair (you need to get the ROBLOX Girl package first)
+--https://www.roblox.com/catalog/48474313/Red-Roblox-Cap
+
+--so you know
+spawn(function()
+local message = Instance.new("Message",workspace)
+message.Text = "FE Booth By thisguyneedsmilk121"
+wait(5)
+message:Destroy()
+end)
+
+--script
+local p = game.Players.LocalPlayer --gets yourself
+local c = p.Character --gets your character
+
+for i, v in pairs(c:GetDescendants()) do
+	if v:IsA("Accesory") then
+		if v.Name ~= "Nike Shoebox Costume" then
+			v:Destroy()
+		end
+		if v.Name ~= "Wings" then
+			v:Destroy()
+		end
+		if v.Name ~= "Pal Hair" then
+			v:Destroy()
+		end
+		if v.Name ~= "LavanderHair" then
+			v:Destroy()
+		end
+		if v.Name ~= "Kate Hair" then
+			v:Destroy()
+		end
+		if v.Name ~= "Hat1" then
+			v:Destroy()
+		end
+		if v.Name ~= "Pink Hair" then
+			v:Destroy()
+		end
+		if v.Name ~= "Robloxclassicred" then
+			v:Destroy()
+		end
+	end
+end
+
+--mesh, rotation, position
+c["Nike Shoebox Costume"]:WaitForChild("Handle").Mesh:Destroy()
+c["Nike Shoebox Costume"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(0, -1.7, -3)
+
+c["Wings"]:WaitForChild("Handle").Mesh:Destroy()
+c["Wings"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(0, 3.9, -2.7)
+
+c["Pal Hair"]:WaitForChild("Handle").Mesh:Destroy()
+c["Pal Hair"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(2.3, 0.5, -2.3)
+c["Pal Hair"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
+
+c["LavanderHair"]:WaitForChild("Handle").Mesh:Destroy()
+c["LavanderHair"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(-2.3, 0.5, -2.3)
+c["LavanderHair"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
+
+c["Kate Hair"]:WaitForChild("Handle").Mesh:Destroy()
+c["Kate Hair"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(2.3, 2.5, -2.3)
+c["Kate Hair"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
+
+c["Hat1"]:WaitForChild("Handle").Mesh:Destroy()
+c["Hat1"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(-2.3, 2.5, -2.3)
+c["Hat1"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
+
+c["Pink Hair"]:WaitForChild("Handle").Mesh:Destroy()
+c["Pink Hair"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(2.3, 4.5, -2.3)
+c["Pink Hair"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
+
+c["Robloxclassicred"]:WaitForChild("Handle").Mesh:Destroy()
+c["Robloxclassicred"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(-2.3, 4.5, -2.3)
+c["Robloxclassicred"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
+--IT TOOK ME A WHOLE DAY TO REALIZE I JUST TYPED 'POSITON' INSTEAD OF 'POSITION' GOD DAMN IT
+--idk maybe ill update this :eyes:
