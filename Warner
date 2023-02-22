@@ -1,0 +1,52 @@
+-- so i did this on my free time, if you feel unsafe exploiting then use this, it will notify you when a specific player joins
+
+-- Warner by me
+local credits = Instance.new("Message",workspace)
+credits.Text = "Made By thisguyneedsmilk121"
+wait(3.5)
+credits:Destroy()
+-- Methods (way to leave)
+local kick = false --slower
+local shutdown = true --faster (recommended)
+-- Variables
+local lp = game.Players.LocalPlayer --(for Kick Method)
+local pA = game:GetService("Players").PlayerAdded
+-- script
+local function notif(plr)
+   local message = {
+	   [REPLACETHISWITHPLAYERID] = true
+    } -- put inside the player (or players in the example's case) id, for example: [123456789],
+																				-- [987654321]
+   function Callback(text) -- Button Requests
+	   if text == "Okay" then
+		   spawn(function()
+		   local warning = Instance.new("Message",workspace)
+		   warning.Text = "You're in Danger! (may be safe to not use exploits meanwhile)"
+		   wait(5)
+		   warning:Destroy()
+		   end)
+	   elseif text == "Leave" then
+		   if kick then
+			   lp:Kick()
+		   elseif shutdown then
+			   game:Shutdown()
+		   end
+	   end
+   end
+
+   local bF = Instance.new("BindableFunction")
+   bF.OnInvoke = Callback -- requests the Button Requests
+   
+   if message[plr.UserId] then
+   game.StarterGui:SetCore("SendNotification", { -- Notification
+       Title = "ADMIN!";
+       Text = "has joined!";
+	   Duration = math.huge;
+	   Button1 = "Okay";
+	   Button2 = "Leave";
+	   Callback = bF; -- request the BindableFunction
+   })
+   end
+end
+
+pA:Connect(notif) -- On Player Joined connect notif
