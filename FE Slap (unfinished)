@@ -10,3 +10,4 @@ Methods:NewAttack("Slap", "e", 12612323618, .1, 15)
 Methods:SetScriptCreator("thisguyneedsmilk121")
 Methods:Chat("i like ya cut g") -- Silly
 Methods:RunScript()
+-- I actually think it isn't working so like you can fix it urself or wait till i stop scratching my ass (impossible)
