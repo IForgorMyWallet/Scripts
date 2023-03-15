@@ -1,0 +1,28 @@
+--WARNING: this works as of krnl_beta may not work on another exploits (different functions)
+--i did this for my own, but you can use this too
+
+SoundService = game:GetService("SoundService")
+
+if not isfile("Life Could Be A Dream.mp3") then
+	writefile("Life Could Be A Dream.mp3", game:HttpGet"https://github.com/IForgorMyWallet/external-files/blob/main/Life%20Could%20Be%20A%20Dream.mp3?raw=true")
+	wait(1)
+	game.Players.LocalPlayer:Kick("Wait A Second (creating file)")
+	wait(1)
+	game:GetService("TeleportService"):Teleport(game.PlaceId)
+elseif isfile("Life Could Be A Dream.mp3")
+	game:GetService("StarterGui"):SetCore("SendNotification", {
+		Title = "File Found!",
+		Text = "thisguyneedsmilk121",
+    Duration = math.huge,
+    Button1 = "ok",
+	})
+end
+
+if not SoundService:FindFirstChild("SoundPlayer") then
+	local Sound = Instance.new("Sound")
+	Sound.Name = "SoundPlayer"
+	Sound.SoundId = getcustomasset("Life Could Be A Dream.mp3")
+	Sound.Looped = true
+	Sound.Parent = SoundService
+	Sound:Play()
+end
