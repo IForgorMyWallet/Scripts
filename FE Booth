@@ -25,30 +25,7 @@ local c = p.Character --gets your character
 
 for i, v in pairs(c:GetDescendants()) do
 	if v:IsA("Accesory") then
-		if v.Name ~= "Nike Shoebox Costume" then
-			v:Destroy()
-		end
-		if v.Name ~= "Wings" then
-			v:Destroy()
-		end
-		if v.Name ~= "Pal Hair" then
-			v:Destroy()
-		end
-		if v.Name ~= "LavanderHair" then
-			v:Destroy()
-		end
-		if v.Name ~= "Kate Hair" then
-			v:Destroy()
-		end
-		if v.Name ~= "Hat1" then
-			v:Destroy()
-		end
-		if v.Name ~= "Pink Hair" then
-			v:Destroy()
-		end
-		if v.Name ~= "Robloxclassicred" then
-			v:Destroy()
-		end
+		v:Destroy()
 	end
 end
 
@@ -83,4 +60,3 @@ c["Robloxclassicred"]:WaitForChild("Handle").Mesh:Destroy()
 c["Robloxclassicred"]:WaitForChild("Handle").Position = c.HumanoidRootPart.Position + Vector3.new(-2.3, 4.5, -2.3)
 c["Robloxclassicred"]:WaitForChild("Handle").Rotation = Vector3.new(90, -0, 0)
 --IT TOOK ME A WHOLE DAY TO REALIZE I JUST TYPED 'POSITON' INSTEAD OF 'POSITION' GOD DAMN IT
---idk maybe ill update this :eyes:
