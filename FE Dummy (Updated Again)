@@ -1,7 +1,13 @@
 --so i made (edited) this script cus i was bored (i actually made it as a base from a maxilito script) 
 --this was real easy and i wont say i made it, its more like i edited it
 
---reminder: delete velocity so the surfboard on character stays and ONYL moves when clicked
+--UPDATE: not THE full update
+--added fling (it sucks)
+
+--UPDATE 2: yes, its the full update (maybe)
+--fling is now hidden underground (people being afraid of spinny things)
+
+--mynamejeff96436 says: now it spins?!
 
 --you need these hats alright:
 --https://www.roblox.com/catalog/63690008/Pal-Hair
@@ -1092,3 +1098,4 @@ att.Position = Vector3.new(0, 0, -0)
 att.Rotation = Vector3.new(0, 0, 0)
 
 game.Players.LocalPlayer.Character.Model.Surfboard.Handle.Transparency = 0.5
+--bottom text
