@@ -1,12 +1,13 @@
 --so i made (edited) this script cus i was bored (i actually made it as a base from a maxilito script) 
 --this was real easy and i wont say i made it, its more like i edited it
 
---UPDATE: its not THE full update
---i added fling (it sucks, wait for update)
+--UPDATE: not THE full update
+--i added fling (it sucks)
+
+--UPDATE 2: yes its the full one (i think)
+--fling is not attached to you anymore (people afraid to get close to spinny things)
 
 --thats all (took me hours cause my brain didnt understand how to make a accessory spin to funky town)
-
---THIS ISNT THE FULL UPDATE, its backup (im not gonna try make it spin again) 
 
 --you need these hats alright:
 --https://www.roblox.com/catalog/63690008/Pal-Hair
@@ -871,4 +872,4 @@ local att2 = gp(handle2, "att1_Handle", "Attachment")
 att2.Parent = cplayer["Left Leg"]
 att2.Position = Vector3.new(0, 0, 0)
 att2.Rotation = Vector3.new(90, 0, 0)
---i lost my mind over this
+--mynamejeff96436 says: now it spins?!
